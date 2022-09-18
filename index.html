@@ -40,7 +40,7 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#my-key">Key</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team">Team</a>
@@ -161,46 +161,38 @@
     <!-- Akhir Portfolio -->
 
     <!-- Blog -->
-    <section id="blog">
+    <section id="my-key">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>My Blog</h2>
+            <h2>My Key</h2>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/blog/1.jpg" class="card-img-top" alt="blog1" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="key-box">
+              <h4 class="key-name">Part 1</h4>
+              <img src="img/blog/9.png" alt="earth" class="key-img">
+              <a href="#" class="btn btn-light key-detail-button">Show Details</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/blog/2.jpg" class="card-img-top" alt="blog2" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="key-box">
+              <h4 class="key-name">Part 2</h4>
+              <img src="img/blog/8.png" alt="coffee" class="key-img">
+              <a href="#" class="btn btn-light key-detail-button">Show Details</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/blog/3.jpg" class="card-img-top" alt="blog3" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="key-box">
+              <h4 class="key-name">Part 3</h4>
+              <img src="img/blog/7.png" alt="chair" class="key-img">
+              <a href="#" class="btn btn-light key-detail-button">Show Details</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#f3f4f5"
@@ -388,6 +380,16 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".key-box"), {
+        max: 35,
+        speed: 1000,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
